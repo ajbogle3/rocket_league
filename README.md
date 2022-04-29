@@ -1,15 +1,7 @@
-Welcome to your new dbt project!
+Welcome to my project! Please feel free to look around, I will update this and document my commits.
 
-### Using the starter project
+Source Data: https://www.kaggle.com/datasets/dylanmonfret/rlcs-202122
 
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](http://community.getbdt.com/) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+Preliminary Phase
+- Load csv files into Snowflake
+- Setup repository and dbt cloud project enviroment
