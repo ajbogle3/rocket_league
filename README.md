@@ -39,6 +39,6 @@ Use Cases by Player or Team:
   3. Who were the top 5 players/teams broken down by matches and games?
   4. Who were the bottom 5 players/teams broken down by matches and games?
   5. What exploritorial data analysis can we derive from the following dataset in regards to a team or players stats and win/loss ratio?
-      a. Does collecting or stealing boost associate with either a positive or negative outcome or result?
-      b. Does movement associate with either a positive or negative outcome or result?
-      c. Does positioning associate with either a positive or negative outcome or result?
+      1. Does collecting or stealing boost associate with either a positive or negative outcome or result?
+      2. Does movement associate with either a positive or negative outcome or result?
+      3. Does positioning associate with either a positive or negative outcome or result?
