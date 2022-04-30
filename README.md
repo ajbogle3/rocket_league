@@ -28,6 +28,3 @@ Winter Split
 * The work of the octane.gg team, where most of the information are coming from, is to parse RLCS data posted on ballchasing.com, which is using Saltie's carball library to decompile .replay files associated with each game of the season. If a game replay has not been uploaded to ballchasing.com or saved to be decompiled, then information (or a major part of them) associated with the game will not be available in datasets. That is why Open Qualifiers games are not in datasets, because these event phases are not covered enough by the community. Some information from Qualifiers and minor / new regions (OCE, SAM, MENA, APAC, SSA) could also be missing.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-READ ME
---------
-As a lover of video games and spending quality time with the boys (as we get older), I figured my first project should revolve around something I enjoy. Therefore, I chose the following dataset as it gave me an opportunity to compare teams, players and regions through Invitational Qualifer, Closed Qualifier and Main Event.
