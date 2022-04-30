@@ -21,5 +21,5 @@ sources:
           - name: player_id
             description: Primary key for players
             tests:
-              - unqique
-              - not null
+              - unique
+              - not_null
