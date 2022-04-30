@@ -33,6 +33,7 @@ READ ME
 As a lover of video games and spending quality time with the boys (as we get older), I figured my first project should revolve around something I enjoy. Therefore, I chose the following dataset as it gave me an opportunity to compare offical matches and unoffical games through the lense of a player and team. 
 
 Use Cases by Player or Team:
+
   1. How does a player perform either in a match setting or playing an unoffical game?
   2. How does a team perform either in a match setting or playing an unoffical game?
   3. Who were the top 5 players/teams broken down by matches and games?
