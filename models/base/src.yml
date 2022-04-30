@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: rocket_league
+    database: raw
+    description: Raw data for my project
+    tables:
+      - name: main
+        description: Raw data for event and match details (stage, event name, match format, and dates).
+      - name: games_by_players
+        description: Raw data for player stats in unoffical games.
+      - name: games_by_teams
+        description: Raw data for team stats in unoffical games.
+      - name: matches_by_players
+        description: Raw data for for player stats in offical games.
+      - name: matches_by_teams
+        description: Raw data for team stats in offfical games
+      - name: players_db
+        description: Raw data for players
+        columns:
+          - name: player_id
+            description: Primary key for players
+            tests:
+              - unqique
+              - not null
