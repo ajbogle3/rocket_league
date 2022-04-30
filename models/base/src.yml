@@ -7,14 +7,65 @@ sources:
     tables:
       - name: main
         description: Raw data for event and match details (stage, event name, match format, and dates).
+        columns:
+          - name: game_id
+            description: ID for game related stats and results
+            tests:
+              - relationships:
+                  to: source('rocket_league','games_by_teams')
+                  field: game_id
+
+          - name: match_id
+            description: ID for match related stats and results
+            tests:
+              - relationships:
+                  to: source('rocket_league','matches_by_teams')
+                  field: match_id
+
       - name: games_by_players
         description: Raw data for player stats in unoffical games.
+        columns:
+          - name: game_id
+            description: Specific ID related to the game
+            tests:
+              - not_null
+          - name: player_id
+            description: PK for players
+            tests:
+              - relationships:
+                  to: source('rocket_league', 'players_db')
+                  field: player_id
+
       - name: games_by_teams
         description: Raw data for team stats in unoffical games.
+        columns:
+          - name: game_id
+            description: Specific ID related to the game
+            tests:
+              - not_null
+
       - name: matches_by_players
         description: Raw data for for player stats in offical games.
+        columns:
+          - name: match_id
+            description: Specific ID related to the match
+            tests:
+              - not_null
+          - name: player_id
+            description: PK for players
+            tests:
+              - relationships:
+                  to: source('rocket_league', 'players_db')
+                  field: player_id
+
       - name: matches_by_teams
         description: Raw data for team stats in offfical games
+        columns:
+          - name: match_id
+            description: Specific ID related to the match
+            tests:
+              - not_null
+
       - name: players_db
         description: Raw data for players
         columns:
