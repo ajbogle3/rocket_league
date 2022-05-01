@@ -3,27 +3,28 @@ version: 2
 sources:
   - name: rocket_league
     database: raw
-    description: Raw data for my project
+    description: Rocket League Championship Series 2021-2022 by octane.gg and ballchasing.com
     tables:
+        # model name change = main to src_event_details
       - name: main
         description: Raw data for event and match details (stage, event name, match format, and dates).
         columns:
+            # primary key for game ID followed by game_number
           - name: game_id
-            description: ID for game related stats and results
+            description: Specific ID related to the game
             tests:
               - relationships:
                   to: source('rocket_league','games_by_teams')
                   field: game_id
-
           - name: match_id
-            description: ID for match related stats and results
+            description: Specific ID related to the game
             tests:
               - relationships:
                   to: source('rocket_league','matches_by_teams')
                   field: match_id
 
       - name: games_by_players
-        description: Raw data for player stats in unoffical games.
+        description: All games played by each player
         columns:
           - name: game_id
             description: Specific ID related to the game
