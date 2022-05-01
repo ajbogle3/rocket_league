@@ -1,7 +1,5 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<<<<<<< HEAD
-=======
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Rocket League is a vehicular soccer video game developed and published by Psyonix. The game was first released for Microsoft Windows and PlayStation 4 in July 2015, with ports for Xbox One and Nintendo Switch being released later on.
 
 Described as "soccer, but with rocket-powered cars", Rocket League has up to eight players assigned to each of the two teams, using rocket-powered vehicles to hit a ball into their opponent's goal and score points over the course of a match. The game includes single-player and multiplayer modes that can be played both locally and online, including cross-platform play between all versions. Later updates for the game enabled the ability to modify core rules and added new game modes, including ones based on ice hockey and basketball.
@@ -30,4 +28,3 @@ All information available with these datasets was obtained using both octane.gg 
 The work of the octane.gg team, where most of the information are coming from, is to parse RLCS data posted on ballchasing.com, which is using Saltie's carball library to decompile .replay files associated with each game of the season. If a game replay has not been uploaded to ballchasing.com or saved to be decompiled, then information (or a major part of them) associated with the game will not be available in datasets. That is why Open Qualifiers games are not in datasets, because these event phases are not covered enough by the community. Some information from Qualifiers and minor / new regions (OCE, SAM, MENA, APAC, SSA) could also be missing.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
->>>>>>> 00b3871bdf213c0d788a6139ecd25c7416720175
