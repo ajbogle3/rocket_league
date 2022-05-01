@@ -35,9 +35,8 @@ models:
   rocket_league:
     # Applies to all files under models/example/
     marts:
-      core:
-        +materialized: table
+      +materialized: table
     base:
       +materialized: view
-    stage:
+    intermediate:
       +materialized: view
