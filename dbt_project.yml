@@ -36,7 +36,5 @@ models:
     # Applies to all files under models/example/
     marts:
       +materialized: table
-    base:
-      +materialized: view
-    intermediate:
+    staging:
       +materialized: view
