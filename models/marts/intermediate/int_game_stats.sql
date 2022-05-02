@@ -19,7 +19,7 @@ final as (
         game_stats.player_score as game_score,
         game_stats.demo_inflicted as game_demos_inflicted,
         game_stats.demo_taken as game_demos_taken,
-        car_name,
+        car_id,
         winner
         
     from players

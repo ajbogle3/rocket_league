@@ -7,7 +7,7 @@ player_list as (
 
     select distinct
         player_id,
-        player_slug as octane_url,
+        player_slug as player_url,
         player_tag,
         player_name,
         player_country

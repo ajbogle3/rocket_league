@@ -9,6 +9,7 @@ players as (
         game_id,
         team_id,
         player_id,
+        car_id,
         color as team_color,
         core_shots::integer as shots,
         core_goals::integer as goals,
@@ -91,20 +92,7 @@ players as (
         positioning_percent_farthest_from_ball::integer as positioning_percent_farthest_from_ball,
         demo_inflicted::integer as demo_inflicted,
         demo_taken::integer as demo_taken,
-        advanced_goal_participation::integer as advanced_goal_participation,
-        advanced_rating::integer as advanced_rating,
-        advanced_mvp::text as advanced_mvp,
-        winner::text as winner,
-        car_id,
-        car_name,
-        steering_sensitivity::double as steering_sensitivity,
-        camera_fov::integer as camera_fov,
-        camera_height::integer as camera_height,
-        camera_pitch::integer as camera_pitch,
-        camera_distance::integer as camera_distance,
-        camera_stiffness::double as camera_stiffness,
-        camera_swivel_speed::double as camera_swivel_speed,
-        camera_transition_speed::double as camera_transition_speed
+        winner::text as winner
     from player_games
 )
 
