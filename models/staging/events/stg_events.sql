@@ -1,23 +1,17 @@
 with events as (
 
-    select
-        match_id,
-        match_round,
-        game_id,
-        game_number::int as game_number,
-        game_duration::int as game_duration,
+    select distinct
+        event_id,
+        event_slug,
         event as event_seed,
         event_split,
-        event_tier,
         event_region,
-        event_start_date::date as event_start_date,
-        event_end_date::date as event_end_date,
-        event_phase,
-        prize_money::int as prize_money,
-        overtime as match_OT,
-        map_name,
-        match_format
+        event_tier,
+        event_start_date,
+        event_end_date,
+        prize_money::integer as prize_money
     from {{ source('rocket_league', 'main') }}
+    order by event_id
 )
 
 select * from events

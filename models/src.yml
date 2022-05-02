@@ -1,0 +1,78 @@
+version: 2
+
+sources:
+  - name: rocket_league
+    database: raw
+    description: Rocket League Championship Series 2021-2022 by octane.gg and ballchasing.com
+    tables:
+        # staging model named = stg_events
+      - name: main
+        description: Raw data for event and match details (stage, event name, match format, and dates).
+        columns:
+          - name: game_id
+            description: Specific ID related to the game
+            tests:
+              - relationships:
+                  to: source('rocket_league','games_by_teams')
+                  field: game_id
+          - name: match_id
+            description: Specific ID related to the game
+            tests:
+              - relationships:
+                  to: source('rocket_league','matches_by_teams')
+                  field: match_id
+
+      - name: games_by_players
+        description: All games played by each player
+        columns:
+          - name: game_id
+            description: Specific ID related to the game
+            tests:
+              - not_null
+          - name: player_id
+            description: PK for players
+            tests:
+              - relationships:
+                  to: source('rocket_league', 'players_db')
+                  field: player_id
+        # staging model named = stg_team_games
+      - name: games_by_teams
+        description: Raw data for team stats in unoffical games.
+        columns:
+          - name: game_id
+            description: Specific ID related to the game
+            tests:
+              - not_null
+
+      - name: matches_by_players
+        description: Raw data for for player stats in offical games.
+        columns:
+          - name: match_id
+            description: Specific ID related to the match
+            tests:
+              - not_null
+          - name: player_id
+            description: PK for players
+            tests:
+              - relationships:
+                  to: source('rocket_league', 'players_db')
+                  field: player_id
+        # staging model named stg_team_matches
+      - name: matches_by_teams
+        description: Raw data for team stats in offfical games
+        columns:
+          - name: match_id
+            description: Specific ID related to the match
+            tests:
+              - not_null
+          - name: team_id
+              - not_null
+        # staging model named stg_players
+      - name: players_db
+        description: Raw data for players
+        columns:
+          - name: player_id
+            description: Primary key for players
+            tests:
+              - unique
+              - not_null

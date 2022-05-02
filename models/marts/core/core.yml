@@ -14,3 +14,40 @@ models:
         tests:
          - unique
          - not_null
+
+  - name: dim_cars
+    columns:
+      - name: car_id
+        tests:
+         - unique
+         - not_null
+  
+  - name: dim_events
+    columns:
+      - name: event_id
+        tests:
+         - unique
+         - not_null
+
+  - name: dim_matches
+    columns:
+      - name: match_id
+        tests:
+         - unique
+         - not_null
+
+  - name: dim_games
+    columns:
+      - name: game_id
+        tests:
+         - unique
+         - not_null
+
+  - name: dim_maps
+    columns:
+      - name: map_id
+        tests:
+         - unique
+         - not_null
+
+
