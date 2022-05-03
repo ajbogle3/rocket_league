@@ -12,6 +12,7 @@ final as (
         event_details.match_id,
         event_details.game_id,
         event_details.game_duration,
+        event_details.game_number,
         event_details.event_phase,
         event_details.game_OT,
         event_details.map_id

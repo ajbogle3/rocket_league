@@ -13,6 +13,7 @@ final as (
         matches.team_id,
         events.game_id,
         events.game_duration,
+        events.game_number,
         events.event_phase,
         events.game_OT,
         events.map_id
