@@ -23,7 +23,7 @@ sources:
                   field: match_id
 
       - name: games_by_players
-        description: All games played by each player
+        description: Raw data player games
         columns:
           - name: game_id
             description: Specific ID related to the game
@@ -37,7 +37,7 @@ sources:
                   field: player_id
         # staging model named = stg_team_games
       - name: games_by_teams
-        description: Raw data for team stats in unoffical games.
+        description: Raw data team games
         columns:
           - name: game_id
             description: Specific ID related to the game
@@ -45,7 +45,7 @@ sources:
               - not_null
 
       - name: matches_by_players
-        description: Raw data for for player stats in offical games.
+        description: Raw data for matches by players
         columns:
           - name: match_id
             description: Specific ID related to the match
@@ -59,7 +59,7 @@ sources:
                   field: player_id
         # staging model named stg_team_matches
       - name: matches_by_teams
-        description: Raw data for team stats in offfical games
+        description: Raw data for matches by teams
         columns:
           - name: match_id
             description: Specific ID related to the match
