@@ -12,8 +12,8 @@ final as (
 
         player_boost.game_id,
         players.player_id,
-        player_boost.boost_bpm,
-        player_boost.boost_bcpm,
+        player_boost.boost_bpm::int as boost_bpm,
+        player_boost.boost_bcpm::int as boost_bcpm,
         player_boost.boost_avg_amount,
         player_boost.boost_amount_collected,
         player_boost.boost_amount_stolen,
