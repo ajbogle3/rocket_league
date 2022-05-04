@@ -1,5 +1,5 @@
 with positioning as (
-    select * from {{ ref('stg_player_games') }}
+    select * from {{ ref('stg_game_stats') }}
 ),
 
 players as (
@@ -8,8 +8,9 @@ players as (
 
 final as (
     select
-        positioning.game_id,
         players.player_id,
+        positioning.team_id,
+        positioning.game_id,
         positioning.positioning_avg_distance_to_ball,
         positioning.positioning_avg_distance_to_ball_possession,
         positioning.positioning_avg_distance_to_ball_no_possession,

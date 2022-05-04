@@ -8,8 +8,8 @@ settings as (
 
 final as (
     select
-        settings.game_id,
         players.player_id,
+        settings.game_id,
         settings.steering_sensitivity,
         settings.camera_fov,
         settings.camera_height,
@@ -18,8 +18,8 @@ final as (
         settings.camera_stiffness,
         settings.camera_swivel_speed,
         settings.camera_transition_speed
-    from players
-    left join settings using (player_id)
+    from settings
+    left join players using (player_id)
 )
 
 select * from final
