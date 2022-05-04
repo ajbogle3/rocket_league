@@ -18,6 +18,7 @@ final as (
         games.game_saves,
         games.game_assists,
         games.game_score,
+        games.advanced_rating,
         games.game_demos_inflicted,
         games.game_demos_taken,
         car_id,
