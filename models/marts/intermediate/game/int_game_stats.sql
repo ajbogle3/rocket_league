@@ -20,6 +20,8 @@ final as (
         game_stats.advanced_rating as advanced_rating,
         game_stats.demo_inflicted as game_demos_inflicted,
         game_stats.demo_taken as game_demos_taken,
+        game_stats.shooting_percentage,
+        game_stats.ADVANCED_GOAL_PARTICIPATION,
         car_id,
         winner
         

@@ -21,6 +21,8 @@ final as (
         games.advanced_rating,
         games.game_demos_inflicted,
         games.game_demos_taken,
+        games.shooting_percentage,
+        games.advanced_goal_participation,
         car_id,
         winner
     from games
