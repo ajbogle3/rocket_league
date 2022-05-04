@@ -17,6 +17,7 @@ final as (
         game_stats.saves as game_saves,
         game_stats.assists as game_assists,
         game_stats.player_score as game_score,
+        game_stats.advanced_rating as advanced_rating,
         game_stats.demo_inflicted as game_demos_inflicted,
         game_stats.demo_taken as game_demos_taken,
         car_id,
