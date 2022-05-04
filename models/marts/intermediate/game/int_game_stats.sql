@@ -3,7 +3,7 @@ with players as (
 ),
 
 game_stats as (
-    select * from {{ ref('stg_player_games') }}
+    select * from {{ ref('stg_game_stats') }}
 ),
 
 final as (

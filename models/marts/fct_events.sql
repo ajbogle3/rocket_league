@@ -3,7 +3,7 @@ with events as (
 ),
 
 matches as (
-    select * from {{ ref('int_team_match_history') }}
+    select * from {{ ref('int_match_stats') }}
 ),
 
 final as (
@@ -11,6 +11,7 @@ final as (
         events.event_id,
         matches.match_id,
         matches.team_id,
+        matches.player_id,
         events.game_id,
         events.game_duration,
         events.game_number,

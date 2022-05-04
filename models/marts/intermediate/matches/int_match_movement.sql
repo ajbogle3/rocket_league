@@ -1,5 +1,5 @@
 with movement as (
-    select * from {{ ref('stg_player_games') }}
+    select * from {{ ref('stg_match_stats') }}
 ),
 
 players as (
@@ -8,8 +8,8 @@ players as (
 
 final as (
     select
-        movement.game_id,
         players.player_id,
+        movement.match_id,
         movement.movement_avg_speed,
         movement.movement_total_distance,
         movement.movement_time_supersonic_speed,
