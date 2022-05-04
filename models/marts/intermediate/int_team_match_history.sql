@@ -10,7 +10,8 @@ final as (
     select
         matches.match_id,
         match_history.team_id,
-        match_history.games_won,
+        match_history.team_region,
+        match_history.player_id,
         match_history.match_winner
     from matches
     left join match_history using (match_id)
