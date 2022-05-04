@@ -90,6 +90,7 @@ players as (
         positioning_percent_most_forward::integer as positioning_percent_most_forward,
         positioning_percent_closest_to_ball::integer as positioning_percent_closest_to_ball,
         positioning_percent_farthest_from_ball::integer as positioning_percent_farthest_from_ball,
+        advanced_rating,
         demo_inflicted::integer as demo_inflicted,
         demo_taken::integer as demo_taken,
         winner::text as winner
