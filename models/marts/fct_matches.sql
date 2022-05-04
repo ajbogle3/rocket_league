@@ -11,7 +11,8 @@ final as (
         events.event_id,
         events.match_id,
         matches.team_id,
-        matches.games_won,
+        matches.team_region,
+        matches.player_id,
         matches.match_winner
     from matches
     left join events using (match_id)
