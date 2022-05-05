@@ -1,3 +1,4 @@
+Introduction
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Rocket League is a vehicular soccer video game developed and published by Psyonix. The game was first released for Microsoft Windows and PlayStation 4 in July 2015, with ports for Xbox One and Nintendo Switch being released later on.
@@ -27,11 +28,10 @@ The work of the octane.gg team, where most of the information are coming from, i
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Project Scope and Context
--------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: https://www.kaggle.com/datasets/dylanmonfret/rlcs-202122
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-The following dataset has been extracted, loaded, and transformed using dbt + snowflake and following the proven methodology of software engineering with version control, modularity, and CI/CD.
+The following dataset has been loaded, and transformed using dbt + snowflake and following the proven methodology of software engineering with version control, modularity, and CI/CD.
 
 As it stands, the current model is roughly 565k+ rows of data following the current Rocket League season of 2021 – 2022 for the Fall and Winter split. Currently, Spring is underway with Worlds being held in Dallas around August.
 
