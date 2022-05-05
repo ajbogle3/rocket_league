@@ -38,3 +38,27 @@ As it stands, the current model is roughly 565k+ rows of data following the curr
 The goal of the project was to create a framework to capture the Rankings and Stats of the professional eSports scene for Rocket League. I did have plans to create a dashboard with PowerBI and Tableau, however, both platforms require the end user to have a license. Therefore, I’ve foregone the visualization piece and if you wish to see the data in action, please visit: https://octane.gg/stats/players?mode=3&minGames=50&group=rlcs2122fall
 
 Nevertheless, please see below the following DAG (Directed Acyclic Graph) which shows the modularity of the project and the final pieces that would give any analyst full capabilities to recreate this dashboard in their BI tool of choice.
+
+fct_events
+----------
+<img src="RL_fct_events.PNG" alt="DAG" title="fct_events">
+
+fct_matches
+----------
+<img src="RL_fct_matches.PNG" alt="DAG" title="fct_matches">
+
+fct_games
+----------
+<img src="RL_fct_games.PNG" alt="DAG" title="fct_games">
+
+int_game_boost
+----------
+<img src="int_game_boost.PNG" alt="DAG" title="int_game_boost">
+
+int_game_movement
+----------
+<img src="int_game_movement.PNG" alt="DAG" title="int_game_movement">
+
+int_game_positioning
+----------
+<img src="int_game_positioning.PNG" alt="DAG" title="int_game_positioning">
