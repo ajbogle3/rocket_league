@@ -9,8 +9,6 @@ Described as "soccer, but with rocket-powered cars", Rocket League has up to eig
 Rocket League was praised for its gameplay improvements over Battle-Cars, as well as its graphics and overall presentation, although some criticism was directed towards the game's physics engine. The game earned a number of industry awards, and saw over 10 million sales and 40 million players by the beginning of 2018. Rocket League has also been adopted as an esport, with professional players participating through ESL and Major League Gaming along with Psyonix's own Rocket League Championship Series (RLCS). […]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Source: https://www.kaggle.com/datasets/dylanmonfret/rlcs-202122
-
 The datasets present Rocket League Championship Series 2021-2022 available data, for every single one region around the world ([EU] Europe, [NA] North America, [SAM] South America, [OCE] Oceania, [MENA] Middle East & North Africa, [APAC] Asia Pacific North/South and [SSA] Sub-Saharan African), including International Majors (Tiebreaker Match and APAC Qualifiers included) and the World Championship.
 
 All information available with these datasets was obtained using both octane.gg and ballchasing.com APIs and cover the following events (pending data availability*):
@@ -28,3 +26,15 @@ All information available with these datasets was obtained using both octane.gg 
 The work of the octane.gg team, where most of the information are coming from, is to parse RLCS data posted on ballchasing.com, which is using Saltie's carball library to decompile .replay files associated with each game of the season. If a game replay has not been uploaded to ballchasing.com or saved to be decompiled, then information (or a major part of them) associated with the game will not be available in datasets. That is why Open Qualifiers games are not in datasets, because these event phases are not covered enough by the community. Some information from Qualifiers and minor / new regions (OCE, SAM, MENA, APAC, SSA) could also be missing.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Project Scope and Context
+-------------------------
+Source: https://www.kaggle.com/datasets/dylanmonfret/rlcs-202122
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The following dataset has been extracted, loaded, and transformed using dbt + snowflake and following the proven methodology of software engineering with version control, modularity, and CI/CD.
+
+As it stands, the current model is roughly 565k+ rows of data following the current Rocket League season of 2021 – 2022 for the Fall and Winter split. Currently, Spring is underway with Worlds being held in Dallas around August.
+
+The goal of the project was to create a framework to capture the Rankings and Stats of the professional eSports scene for Rocket League. I did have plans to create a dashboard with PowerBI and Tableau, however, both platforms require the end user to have a license. Therefore, I’ve foregone the visualization piece and if you wish to see the data in action, please visit: https://octane.gg/stats/players?mode=3&minGames=50&group=rlcs2122fall
+
+Nevertheless, please see below the following DAG (Directed Acyclic Graph) which shows the modularity of the project and the final pieces that would give any analyst full capabilities to recreate this dashboard in their BI tool of choice.
