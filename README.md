@@ -35,20 +35,11 @@ The following dataset has been loaded, and transformed using dbt + snowflake and
 
 As it stands, the current model is roughly 565k+ rows of data following the current Rocket League season of 2021 – 2022 for the Fall and Winter split. Currently, Spring is underway with Worlds being held in Dallas around August.
 
-The goal of the project was to create a framework to capture the Rankings and Stats of the professional eSports scene for Rocket League. I did have plans to create a dashboard with PowerBI, however, it requires the end user to have a license. I did search for another BI tool, but most either require a license or have short trial versions. Therefore, I’ve foregone the visualization piece and included screenshots of what I did develop (very preliminary) and if you wish to see the data in action, in its entirety, please visit: https://octane.gg/stats/players?mode=3&minGames=50&group=rlcs2122fall
-
 Nevertheless, please see below the following DAG (Directed Acyclic Graph) which shows the modularity of the project and the final pieces that would give any analyst full capabilities to recreate this dashboard in their BI tool of choice.
 
-Preliminary Dashboard (Screenshots)
------------------------------------
-
-Total Player Stats
-------------------
-<img src="screenshots/player_total_stats.PNG" alt="DAG" title="Total Player Stats">
-
-Total Player 5-Min Stats
-------------------
-<img src="screenshots/player_5min_stats.PNG" alt="DAG" title="Total Player 5MIN Stats">
+Live Dashboard View
+-------------------
+https://ajbogle.me/projects/
 
 fct_events
 ----------
