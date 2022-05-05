@@ -44,32 +44,32 @@ Preliminary Dashboard (Screenshots)
 
 Total Player Stats
 ------------------
-<img src="player_total_stats.PNG" alt="DAG" title="Total Player Stats">
+<img src="screenshots/player_total_stats.PNG" alt="DAG" title="Total Player Stats">
 
 Total Player 5-Min Stats
 ------------------
-<img src="player_5min_stats.PNG" alt="DAG" title="Total Player 5MIN Stats">
+<img src="screenshots/player_5min_stats.PNG" alt="DAG" title="Total Player 5MIN Stats">
 
 fct_events
 ----------
-<img src="RL_fct_events.PNG" alt="DAG" title="fct_events">
+<img src="screenshots/RL_fct_events.PNG" alt="DAG" title="fct_events">
 
 fct_matches
 ----------
-<img src="RL_fct_matches.PNG" alt="DAG" title="fct_matches">
+<img src="screenshots/RL_fct_matches.PNG" alt="DAG" title="fct_matches">
 
 fct_games
 ----------
-<img src="RL_fct_games.PNG" alt="DAG" title="fct_games">
+<img src="screenshots/RL_fct_games.PNG" alt="DAG" title="fct_games">
 
 int_game_boost
 ----------
-<img src="int_game_boost.PNG" alt="DAG" title="int_game_boost">
+<img src="screenshots/int_game_boost.PNG" alt="DAG" title="int_game_boost">
 
 int_game_movement
 ----------
-<img src="int_game_movement.PNG" alt="DAG" title="int_game_movement">
+<img src="screenshots/int_game_movement.PNG" alt="DAG" title="int_game_movement">
 
 int_game_positioning
 ----------
-<img src="int_game_positioning.PNG" alt="DAG" title="int_game_positioning">
+<img src="screenshots/int_game_positioning.PNG" alt="DAG" title="int_game_positioning">
