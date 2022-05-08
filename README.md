@@ -39,7 +39,7 @@ Nevertheless, please see below the following DAG (Directed Acyclic Graph) which 
 
 Live Dashboard View
 -------------------
-https://ajbogle.me/projects/
+https://ajbogle.me/Rocket-League/
 
 fct_events
 ----------
