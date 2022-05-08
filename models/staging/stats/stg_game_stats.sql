@@ -16,7 +16,7 @@ players as (
         core_saves::integer as saves,
         core_assists::integer as assists,
         core_score::integer as player_score,
-        core_shooting_percentage,
+        core_shooting_percentage as shooting_percentage,
         ADVANCED_GOAL_PARTICIPATION,
         boost_bpm::integer as boost_bpm,
         boost_bcpm::integer as boost_bcpm,
